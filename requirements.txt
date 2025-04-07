@@ -5,4 +5,5 @@ langchain-google-genai
 langchain-community
 langchain-experimental
 pydantic
-chromadb
+google-generativeai
+faiss-cpu

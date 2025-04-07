@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import CSVLoader
 from langchain_experimental.text_splitter import SemanticChunker 
 from langchain.schema import Document
@@ -47,7 +47,7 @@ if user_query:
         chunks = chunker.split_documents([doc])
 
         # Build chunks
-        vectorstore = Chroma.from_documents(documents=chunks, embedding=embedding_model)
+        vectorstore = FAISS.from_documents(documents=chunks, embedding=embedding_model)
         retriever = vectorstore.as_retriever()
 
         # LLM
