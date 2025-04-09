@@ -1,0 +1,6 @@
+POST http://127.0.0.1:8000/recommend
+Content-Type: application/json
+
+{
+  "query": "I am hiring for Java developers who can also collaborate effectively with my business teams. Looking for an assessment(s) that can be completed in 40 minutes."
+}

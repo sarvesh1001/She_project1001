@@ -1,4 +1,4 @@
-streamlit
+fastapi
 python-dotenv
 langchain
 langchain-google-genai
@@ -7,3 +7,4 @@ langchain-experimental
 pydantic
 google-generativeai
 faiss-cpu
+streamlit
